@@ -11,7 +11,9 @@ import UIKit
 class MainViewController: UITableViewController {
 
     var modules: [ModuleItem] = [
-        BaseViewControllerViewController()
+        BaseViewControllerViewController(),
+        NavigationControllerViewController(),
+        TabBarControllerViewController()
     ]
 
     override func viewDidLoad() {

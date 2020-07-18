@@ -2,7 +2,7 @@
 //  MUIColorManager.swift
 //  MarvelUIKit
 //
-//  Created by Vandcarlos Mouzinho Sandes Junior on 07/07/20.
+//  Created by Vandcarlos Mouzinho Sandes Junior on 07/18/2020.
 //
 
 import UIKit

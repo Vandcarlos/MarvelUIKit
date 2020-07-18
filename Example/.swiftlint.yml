@@ -41,5 +41,8 @@ type_name:
 identifier_name:
   min_length: # only min_length
     error: 3 # only error
-  # excluded: # excluded via string array
+  excluded: # excluded via string array
+    - sm
+    - md
+    - lg
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
