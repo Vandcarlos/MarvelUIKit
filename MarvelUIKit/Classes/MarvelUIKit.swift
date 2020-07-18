@@ -1,9 +1,4 @@
 //
-//  MarvelUIKit.swift
-//  FBSnapshotTestCase
-//
-//  Created by Vandcarlos Mouzinho Sandes Junior on 07/17/2020.
-//
 
 import Foundation
 

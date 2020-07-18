@@ -1,10 +1,4 @@
 //
-//  AppDelegate.swift
-//  MarvelUIKit
-//
-//  Created by vandcarlosjunior@gmail.com on 07/17/2020.
-//  Copyright (c) 2020 vandcarlosjunior@gmail.com. All rights reserved.
-//
 
 import UIKit
 import MarvelUIKit

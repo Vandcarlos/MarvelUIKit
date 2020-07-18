@@ -1,9 +1,4 @@
 //
-//  UIColor+.swift
-//  MarvelUIKit
-//
-//  Created by Vandcarlos Mouzinho Sandes Junior on 07/07/20.
-//
 
 import UIKit
 
