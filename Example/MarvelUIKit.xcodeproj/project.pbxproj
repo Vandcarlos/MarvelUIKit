@@ -11,6 +11,8 @@
 		A038AEFB24C297C600CEE1E2 /* ModuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AEF724C297C600CEE1E2 /* ModuleItem.swift */; };
 		A038AEFC24C297C600CEE1E2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AEF824C297C600CEE1E2 /* MainViewController.swift */; };
 		A038AEFD24C297C600CEE1E2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AEF924C297C600CEE1E2 /* MainTableViewCell.swift */; };
+		A038AF0424C29CBB00CEE1E2 /* BaseViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF0224C29CBB00CEE1E2 /* BaseViewControllerView.swift */; };
+		A038AF0524C29CBB00CEE1E2 /* BaseViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF0324C29CBB00CEE1E2 /* BaseViewControllerViewController.swift */; };
 		A0A6B84624C2961D001D71EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A6B84224C2961D001D71EB /* Images.xcassets */; };
 		A0A6B84724C2961D001D71EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6B84324C2961D001D71EB /* AppDelegate.swift */; };
 		D9ADCAFDC04E089278A1F73C /* Pods_MarvelUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AF3F8130C84EC9824BFA19 /* Pods_MarvelUIKit_Example.framework */; };
@@ -41,6 +43,8 @@
 		A038AEF724C297C600CEE1E2 /* ModuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleItem.swift; sourceTree = "<group>"; };
 		A038AEF824C297C600CEE1E2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A038AEF924C297C600CEE1E2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A038AF0224C29CBB00CEE1E2 /* BaseViewControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerView.swift; sourceTree = "<group>"; };
+		A038AF0324C29CBB00CEE1E2 /* BaseViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerViewController.swift; sourceTree = "<group>"; };
 		A0A6B84124C2961D001D71EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A0A6B84224C2961D001D71EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0A6B84324C2961D001D71EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		607FACD21AFB9204008FA782 /* Example for MarvelUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A038AF0024C29CA800CEE1E2 /* Modules */,
 				A038AEF524C297B900CEE1E2 /* Main */,
 				A0A6B83F24C2961D001D71EB /* Supporting Files */,
 			);
@@ -158,6 +163,23 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		A038AF0024C29CA800CEE1E2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A038AF0124C29CA800CEE1E2 /* BaseViewController */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A038AF0124C29CA800CEE1E2 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A038AF0224C29CBB00CEE1E2 /* BaseViewControllerView.swift */,
+				A038AF0324C29CBB00CEE1E2 /* BaseViewControllerViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		A0A6B83F24C2961D001D71EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +203,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				A038AE9F24C2967600CEE1E2 /* Swift Lint */,
+				E83D0634A48B7680BB004FDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +332,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E83D0634A48B7680BB004FDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelUIKit_Example/Pods-MarvelUIKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MarvelUIKit/MarvelUIKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarvelUIKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelUIKit_Example/Pods-MarvelUIKit_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F293E9AA0BD8514A341CEB06 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,9 +379,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A038AF0524C29CBB00CEE1E2 /* BaseViewControllerViewController.swift in Sources */,
 				A038AEFB24C297C600CEE1E2 /* ModuleItem.swift in Sources */,
 				A0A6B84724C2961D001D71EB /* AppDelegate.swift in Sources */,
 				A038AEFC24C297C600CEE1E2 /* MainViewController.swift in Sources */,
+				A038AF0424C29CBB00CEE1E2 /* BaseViewControllerView.swift in Sources */,
 				A038AEFD24C297C600CEE1E2 /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

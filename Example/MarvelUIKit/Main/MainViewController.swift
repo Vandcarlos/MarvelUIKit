@@ -10,7 +10,9 @@ import UIKit
 
 class MainViewController: UITableViewController {
 
-    var modules: [ModuleItem] = []
+    var modules: [ModuleItem] = [
+        BaseViewControllerViewController()
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
