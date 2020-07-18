@@ -17,6 +17,12 @@
 		A038AF0D24C29F5900CEE1E2 /* TabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF0824C29F5900CEE1E2 /* TabBarControllerViewController.swift */; };
 		A038AF0E24C29F5900CEE1E2 /* NavigationViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF0A24C29F5900CEE1E2 /* NavigationViewControllerViewController.swift */; };
 		A038AF0F24C29F5900CEE1E2 /* NavigationControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF0B24C29F5900CEE1E2 /* NavigationControllerView.swift */; };
+		A038AF3524C2A84300CEE1E2 /* CharacterTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF2D24C2A84300CEE1E2 /* CharacterTableCellView.swift */; };
+		A038AF3624C2A84300CEE1E2 /* CharacterTableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF2E24C2A84300CEE1E2 /* CharacterTableCellViewController.swift */; };
+		A038AF3724C2A84300CEE1E2 /* SearchViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF3024C2A84300CEE1E2 /* SearchViewControllerView.swift */; };
+		A038AF3824C2A84300CEE1E2 /* SearchViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF3124C2A84300CEE1E2 /* SearchViewControllerViewController.swift */; };
+		A038AF3924C2A84300CEE1E2 /* CharacterCollectionCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF3324C2A84300CEE1E2 /* CharacterCollectionCellViewController.swift */; };
+		A038AF3A24C2A84300CEE1E2 /* CharacterCollectionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038AF3424C2A84300CEE1E2 /* CharacterCollectionCellView.swift */; };
 		A0A6B84624C2961D001D71EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A6B84224C2961D001D71EB /* Images.xcassets */; };
 		A0A6B84724C2961D001D71EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6B84324C2961D001D71EB /* AppDelegate.swift */; };
 		D9ADCAFDC04E089278A1F73C /* Pods_MarvelUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AF3F8130C84EC9824BFA19 /* Pods_MarvelUIKit_Example.framework */; };
@@ -53,6 +59,12 @@
 		A038AF0824C29F5900CEE1E2 /* TabBarControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewController.swift; sourceTree = "<group>"; };
 		A038AF0A24C29F5900CEE1E2 /* NavigationViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerViewController.swift; sourceTree = "<group>"; };
 		A038AF0B24C29F5900CEE1E2 /* NavigationControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerView.swift; sourceTree = "<group>"; };
+		A038AF2D24C2A84300CEE1E2 /* CharacterTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableCellView.swift; sourceTree = "<group>"; };
+		A038AF2E24C2A84300CEE1E2 /* CharacterTableCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableCellViewController.swift; sourceTree = "<group>"; };
+		A038AF3024C2A84300CEE1E2 /* SearchViewControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewControllerView.swift; sourceTree = "<group>"; };
+		A038AF3124C2A84300CEE1E2 /* SearchViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewControllerViewController.swift; sourceTree = "<group>"; };
+		A038AF3324C2A84300CEE1E2 /* CharacterCollectionCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCellViewController.swift; sourceTree = "<group>"; };
+		A038AF3424C2A84300CEE1E2 /* CharacterCollectionCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCellView.swift; sourceTree = "<group>"; };
 		A0A6B84124C2961D001D71EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A0A6B84224C2961D001D71EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0A6B84324C2961D001D71EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,9 +186,12 @@
 		A038AF0024C29CA800CEE1E2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A038AF0924C29F5900CEE1E2 /* NavigationController */,
-				A038AF0624C29F5900CEE1E2 /* TabBarController */,
 				A038AF0124C29CA800CEE1E2 /* BaseViewController */,
+				A038AF3224C2A84300CEE1E2 /* CharacterCollectionCell */,
+				A038AF2C24C2A84300CEE1E2 /* CharacterTableCell */,
+				A038AF0924C29F5900CEE1E2 /* NavigationController */,
+				A038AF2F24C2A84300CEE1E2 /* SearchViewController */,
+				A038AF0624C29F5900CEE1E2 /* TabBarController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -206,6 +221,33 @@
 				A038AF0B24C29F5900CEE1E2 /* NavigationControllerView.swift */,
 			);
 			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		A038AF2C24C2A84300CEE1E2 /* CharacterTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A038AF2D24C2A84300CEE1E2 /* CharacterTableCellView.swift */,
+				A038AF2E24C2A84300CEE1E2 /* CharacterTableCellViewController.swift */,
+			);
+			path = CharacterTableCell;
+			sourceTree = "<group>";
+		};
+		A038AF2F24C2A84300CEE1E2 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A038AF3024C2A84300CEE1E2 /* SearchViewControllerView.swift */,
+				A038AF3124C2A84300CEE1E2 /* SearchViewControllerViewController.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		A038AF3224C2A84300CEE1E2 /* CharacterCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				A038AF3324C2A84300CEE1E2 /* CharacterCollectionCellViewController.swift */,
+				A038AF3424C2A84300CEE1E2 /* CharacterCollectionCellView.swift */,
+			);
+			path = CharacterCollectionCell;
 			sourceTree = "<group>";
 		};
 		A0A6B83F24C2961D001D71EB /* Supporting Files */ = {
@@ -368,10 +410,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MarvelUIKit_Example/Pods-MarvelUIKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MarvelUIKit/MarvelUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarvelUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,8 +451,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A038AF3A24C2A84300CEE1E2 /* CharacterCollectionCellView.swift in Sources */,
 				A038AF0524C29CBB00CEE1E2 /* BaseViewControllerViewController.swift in Sources */,
 				A038AEFB24C297C600CEE1E2 /* ModuleItem.swift in Sources */,
+				A038AF3924C2A84300CEE1E2 /* CharacterCollectionCellViewController.swift in Sources */,
 				A0A6B84724C2961D001D71EB /* AppDelegate.swift in Sources */,
 				A038AEFC24C297C600CEE1E2 /* MainViewController.swift in Sources */,
 				A038AF0424C29CBB00CEE1E2 /* BaseViewControllerView.swift in Sources */,
@@ -416,7 +462,11 @@
 				A038AF0F24C29F5900CEE1E2 /* NavigationControllerView.swift in Sources */,
 				A038AF0D24C29F5900CEE1E2 /* TabBarControllerViewController.swift in Sources */,
 				A038AF0C24C29F5900CEE1E2 /* TabBarControllerView.swift in Sources */,
+				A038AF3824C2A84300CEE1E2 /* SearchViewControllerViewController.swift in Sources */,
+				A038AF3624C2A84300CEE1E2 /* CharacterTableCellViewController.swift in Sources */,
 				A038AF0E24C29F5900CEE1E2 /* NavigationViewControllerViewController.swift in Sources */,
+				A038AF3724C2A84300CEE1E2 /* SearchViewControllerView.swift in Sources */,
+				A038AF3524C2A84300CEE1E2 /* CharacterTableCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

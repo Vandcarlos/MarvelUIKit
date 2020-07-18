@@ -23,4 +23,6 @@ Pod::Spec.new do |s|
   s.source_files = 'MarvelUIKit/Classes/**/*'
   s.resources = 'MarvelUIKit/Assets/**/*'
 
+  s.dependency 'SkeletonView', '~> 1.8.1'
+
 end

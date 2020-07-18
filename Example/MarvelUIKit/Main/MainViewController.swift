@@ -7,7 +7,10 @@ class MainViewController: UITableViewController {
     var modules: [ModuleItem] = [
         BaseViewControllerViewController(),
         NavigationControllerViewController(),
-        TabBarControllerViewController()
+        TabBarControllerViewController(),
+        SearchViewControllerViewController(),
+        CharacterTableCellViewController(),
+        CharacterCollectionCellViewController()
     ]
 
     override func viewDidLoad() {
