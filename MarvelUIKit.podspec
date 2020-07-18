@@ -9,34 +9,18 @@
 Pod::Spec.new do |s|
   s.name             = 'MarvelUIKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MarvelUIKit.'
+  s.summary          = 'The UI kit'
+  s.swift_version    = '5.2'
+  s.ios.deployment_target = '12.0'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description      = 'The UI kit'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/vandcarlosjunior@gmail.com/MarvelUIKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/Vandcarlos/MarvelUIKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vandcarlosjunior@gmail.com' => 'vandcarlosjunior@gmail.com' }
-  s.source           = { :git => 'https://github.com/vandcarlosjunior@gmail.com/MarvelUIKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  s.author           = { 'Vandcarlos' => 'vandcarlosjunior@gmail.com' }
+  s.source           = { :git => 'https://github.com/Vandcarlos/MarvelUIKit.git', :tag => s.version.to_s }
 
   s.source_files = 'MarvelUIKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MarvelUIKit' => ['MarvelUIKit/Assets/*.png']
-  # }
+  s.resources = 'MarvelUIKit/Assets/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
